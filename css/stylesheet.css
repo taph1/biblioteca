@@ -1,0 +1,696 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* background-color: #f7f7f7; */
+    /* color: #333; */
+}
+
+header {
+    background: #fff;
+    color: #333;
+    padding: 10px 20px;
+    height: 200px;
+    border-bottom: none;
+    text-align: center;
+}
+
+header img {
+  position: relative;
+  left: -500px;
+  bottom: 8px;
+  size: 550px 200px;
+}
+
+header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    top: -115px;
+    /* bottom: 0;
+    left: 0; */
+}
+
+
+header h1 {
+  position: relative;
+  top: -140px;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header ul {
+position: relative;
+top: -120px;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header ul li {
+  position: relative;
+}
+
+header ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    border-radius: 25px;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header ul li a:hover {
+    background-color: #151414;
+    color: white;
+    border-radius: 25px;
+}
+
+
+/* Estilo del menú desplegable */
+
+/* Estilo del menú desplegable */
+.submenu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crea columnas flexibles */
+  gap: 20px; /* Espaciado entre columnas */
+  padding: 20px; /* Espaciado interno */
+  background-color: #e2dcdc; /* Fondo del menú */
+  border: 2px solid #090909; /* Borde del menú */
+  border-radius: 5px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para el efecto flotante */
+  list-style: none; /* Eliminar los puntos de la lista */
+}
+
+/* Estilo de los elementos del menú */
+.submenu li {
+  margin: 0; /* Espaciado entre elementos */
+}
+
+.submenu li strong {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+  display: block; /* Para separar títulos del resto */
+}
+
+/* Estilo de los enlaces */
+.submenu li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submenu li a:hover {
+  background-color: #fbf8f8; /* Fondo al pasar el cursor */
+}
+
+
+/* Ocultar el submenú por defecto */
+header ul .dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Coloca el menú debajo del enlace principal */
+  left: -140px;
+  z-index: 1000; /* Asegura que se muestre sobre otros elementos */
+}
+
+/* Mostrar el submenú al pasar el mouse */
+header ul .dropdown:hover .submenu {
+  display: block;
+}
+
+
+.category-p {
+  display: flex; /* Permite alinear los elementos en línea */
+  align-items: center; /* Alinea verticalmente al centro */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 10px; /* Espaciado entre las líneas y el texto */
+  margin: 20px 0;
+  font-size: 1.5rem; /* Tamaño del texto */
+  font-weight: bold;
+  color: #333;
+  position: relative;
+
+}
+
+.category-p p {
+  position: relative;
+  left: 0px;
+}
+
+.category-p::before,
+.category-p::after {
+  content: ''; /* Necesario para generar el pseudo-elemento */
+  flex: 1; /* Las líneas ocupan todo el espacio disponible */
+  height: 2px; /* Grosor de las líneas */
+  background-color: #333; /* Color de las líneas */
+}
+
+
+/* Contenedor de categorías */
+#categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta las columnas automáticamente */
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Botones de categoría */
+#categories .category {
+  background-color: #f4f4f4; /* Color base por defecto */
+  color: rgb(15, 14, 14);
+  font-size: 1rem;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Colores únicos para cada categoría */
+#categories .category:nth-child(1) { background-color: #bab6b4; } /* NOVEL·LA */
+#categories .category:nth-child(2) { background-color: #bab6b4; } /* CIÈNCIA */
+#categories .category:nth-child(3) { background-color: #bab6b4; } /* HISTÒRIA */
+#categories .category:nth-child(4) { background-color: #bab6b4; } /* FILOSOFIA */
+#categories .category:nth-child(5) { background-color: #bab6b4; } /* POLÍTICA */
+#categories .category:nth-child(6) { background-color: #bab6b4; } /* SALUT */
+#categories .category:nth-child(7) { background-color: #bab6b4; } /* FLORA */
+#categories .category:nth-child(8) { background-color: #bab6b4; } /* CÒMICS */
+#categories .category:nth-child(9) { background-color: #bab6b4; } /* ANTICS */
+#categories .category:nth-child(10) { background-color: #bab6b4; } /* VIATGES */
+#categories .category:nth-child(11) { background-color: #bab6b4; } /* PEL·LÍCULES */
+#categories .category:nth-child(12) { background-color: #bab6b4; } /* POESIA */
+#categories .category:nth-child(13) { background-color: #bab6b4; } /* INFANTIL */
+#categories .category:nth-child(14) { background-color: #bab6b4; } /* CONTES */
+#categories .category:nth-child(15) { background-color: #bab6b4; } /* FAUNA */
+#categories .category:nth-child(16) { background-color: #bab6b4; } /* ESPIRITUALITAT */
+#categories .category:nth-child(17) { background-color: #bab6b4; } /* CUINA */
+#categories .category:nth-child(18) { background-color: #bab6b4; } /* JUVENIL */
+#categories .category:nth-child(19) { background-color: #bab6b4; } /* MANGA */
+#categories .category:nth-child(20) { background-color: #bab6b4; } /* GUIES */
+#categories .category:nth-child(21) { background-color: #bab6b4; } /* ART */
+#categories .category:nth-child(22) { background-color: #bab6b4; } /* TEATRE */
+#categories .category:nth-child(23) { background-color: #bab6b4; } /* CD'S */
+#categories .category:nth-child(24) { background-color: #bab6b4; } /* MÚSICA */
+#categories .category:nth-child(25) { background-color: #bab6b4; } /* PSICOLOGIA */
+#categories .category:nth-child(26) { background-color: #bab6b4; } /* NATURA */
+
+/* Efectos al pasar el mouse */
+#categories .category:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+main section p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #555;
+}
+
+main ul {
+    list-style-type: disc;
+    margin: 10px 40px;
+    color: #555;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.search-container input {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+    max-width: 500px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container button {
+    padding: 15px;
+    background-color: #d32f2f;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container button img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-container button:hover {
+    background-color: #a30000;
+}
+
+
+.principal {
+    max-width: 1000px;
+    margin: -60px auto;
+    /* text-align: center; */
+    line-height: 1.8;
+    /* color: #444; */
+    padding: 20px;
+}
+
+
+
+
+.inicio img {
+    display: block;
+    margin: 20px auto;
+    max-width: 50%;
+    height: auto;
+}
+
+
+footer {
+  background: #1b1b1b;
+  color: white;
+ height: 220px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+footer div {
+  margin: 10px;
+  flex: 1;
+  min-width: 200px;
+}
+
+footer h2 {
+  margin: 0 0 15px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+div.Whatsapp {
+position: relative;
+right: -40px;
+top: -30px;
+color: #ccc;
+text-decoration: none;
+}
+div.insta {
+position: relative;
+left: 150px;
+top: -167px;
+}
+
+div.Whatsapp p {
+position: relative;
+bottom: -25px;
+left: -10px;
+}
+h2.siguenos {
+position: relative;
+right: -80px;
+}
+
+div.insta p{
+position: relative;
+bottom: -27px;
+left: -10px;
+}
+
+footer .sociales img {
+position: relative;
+bottom: -40px;
+  width: 30px;
+  margin-left: 10px;
+ transition: scale(2.2);
+}
+
+div.horari {
+position: relative;
+top: -40px;
+left: -140px;
+font-size: 1em;
+}
+
+div.horari2 {
+position: relative;
+top: -60px;
+left: -140px;
+font-size: 1em;
+}
+
+footer .sociales a img:hover {
+  transform: scale(2.2);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 5px;
+}
+
+footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  transition: color 0.3s;
+}
+li.onson {
+position: relative;
+right: 70px;
+}
+
+footer ul li a:hover {
+font-size: 1em;
+  color: #e6c523;
+  transform: scale(10.10);
+}
+
+
+.copyright {
+position: relative;
+left: -430px;
+bottom: 0px;
+
+}
+
+div.category p {
+  position: relative;
+ right: -570px;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.copyright p {
+position: relative;
+bottom: -40px;
+left: 40px;
+font-size: 1em;
+font-weight: bolder;
+}
+
+.copy {
+position: relative;
+top: -65px;
+left: -140px;
+}
+
+.copytitle {
+position: relative;
+left: -100px;
+}
+
+.trobans {
+position: relative;
+right: -400px;
+bottom: -14px;
+}
+
+div.insignia img {
+  position: relative;
+ bottom: -40px;
+  width: 100px;
+  left: -60Px;
+}
+
+/* colocar titulos en el centro */
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #000;
+    margin: 0 10px;
+}
+
+.section-title span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.direccion {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .direccion-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .mapa {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+  }
+  
+  .info h3 {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+
+  .libros-destacados {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .libros-destacados h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .libros-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .libro {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .libro img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  .etiqueta {
+    background: #28a745;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  
+  .formato {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .libro h3 {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: #000;
+  }
+  
+  .libro .autor {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .precio {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .precio-original {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .descuento {
+    color: #e63946;
+    font-weight: bold;
+  }
+  
+  .precio-final {
+    color: #d32f2f;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .envio {
+    color: #28a745;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  /* proyectossssssssss */
+
+
+
+
+  .hero {
+
+    color: #333; 
+    padding: 40px 20px; 
+    text-align: center; 
+}
+
+.hero .container {
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem; 
+    line-height: 1.5;
+    color: #666; 
+}
+
+.formulario-contacto {
+  position: relative;
+  right: -200px;
+ width: 70%;
+  height: 40%;
+  border: 2px solid #090909;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.formulario-contacto h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  position: relative;
+  top: -35px;
+  right: -130px;
+  width: 80%;
+  height: 40%;
+  border: 2px solid #101010;
+  border-radius: 4px;
+}
+
+.formulario-contacto label {
+  position: relative;
+  right: -40px;
+  font-weight: bolder;
+}
+
+.formulario-contacto button {
+  position: relative;
+  top: -20px;
+  padding: 0.7rem;
+  background-color: #8c8888;
+  color: rgb(15, 14, 14);
+  border: none;
+  border-radius: 25px;
+  width: 60%;
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: bolder;
+  right: -190px;
+}
+
+.formulario-contacto button:hover {
+  background-color: #090909;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+
