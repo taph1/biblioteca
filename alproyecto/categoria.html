@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LLIBRES</title>
-    <link rel="stylesheet" href="../css/stylesheet.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="imag/x-icon" >
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="imag/x-icon" >
 </head>
 <body>
     
 
   <header>
-    <img src="./images/Logo - copia.png" alt="logo" style="width: 150px;">
+    <img src="/images/Logo - copia.png" alt="logo" style="width: 150px;">
     <h1>LA PILA DE LLIBRES</h1>
   
       <ul>
@@ -111,79 +111,68 @@
       <li><a href="categoria.html">CATEGORIA</a></li>
       <li><a href="nosaltres.html">NOSALTRES</a></li>
       <li><a href="projectes.html">PROJECTES</a></li>
-      <li><a href="contacte.html">CONTACTE</a></li>
+      <li><a href="contacte.html">CONTACTE</a></li> 
   
      </ul>
   </header>
 
-<main>
-    <!-- Formulario de contacto -->
-    <section class="formulario-contacto">
-      <h2>Envia'ns un missatge</h2>
-      <form action="/enviar-missatge" method="POST">
-        <label for="nombre">Nom:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="El teu nom" required>
-  
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="El teu correu electrònic" required>
-  
-        <label for="mensaje">Missatge:</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Escriu el teu missatge aquí..." rows="5" required></textarea>
-  
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
+  <div class="category-p">
+    <p>CATEGORIAS DE LLIBRES</p>
+</div>
+  <main>
+        <div id="categories" class="categories-container">
 
-  <section class="direccion">
-      
-    <div class="direccion-container">
-      <div class="mapa">
-                
-                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10062.784791266746!2d2.1716170828221952!3d41.4243817763027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bd2b6672b3ff%3A0x5151396dcfc37bbb!2sLA%20PILA%20DE%20LLIBRES!5e0!3m2!1ses!2ses!4v1733260763970!5m2!1ses!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-          
-      </div>
-      <div class="info">
-        <h3><strong>Adreça</strong></h3>
-        <p>LA PILA DE LLIBRES<br>Carrer de Francesc Tàrrega, 9, Sant Andreu, 08027 Barcelona</p>
-        <h3><strong>Horari d'atenció al públic</strong></h3>
-        <p>
-          Dilluns a Divendres: 10:00 - 13:30 / 15:00 - 20:00<br>
-          Dissabte: 10 - 13:30<br>
-          Diumenge: Tancat
-        </p>
-        <p> <strong>Consultar horari en Google map</strong></p>
-        <h3><strong>Contacte</strong></h3>
-        <p>Telèfon: 93 528 34 26<br>Email: info@nomdellibreria.cat</p>
-      </div>
+        <button class="category" data-count="0">NOVEL·LA</button>
+        <button class="category" data-count="0">CIÈNCIA</button>
+        <button class="category" data-count="0">HISTÒRIA</button>
+        <button class="category" data-count="0">FILOSOFIA</button>
+        <button class="category" data-count="0">POLÍTICA</button>
+        <button class="category" data-count="0">SALUT</button>
+        <button class="category" data-count="0">FLORA</button>
+        <button class="category" data-count="0">CÒMICS</button>
+        <button class="category" data-count="0">ANTICS</button>
+        <button class="category" data-count="0">VIATGES</button>
+        <button class="category" data-count="0">CINÈMAS</button>
+        <button class="category" data-count="0">POESIA</button>
+        <button class="category" data-count="0">INFANTIL</button>
+        <button class="category" data-count="0">CONTES</button>
+        <button class="category" data-count="0">FAUNA</button>
+        <button class="category" data-count="0">ESPIRITUALITAT</button>
+        <button class="category" data-count="0">CUINA</button>
+        <button class="category" data-count="0">JUVENIL</button>
+        <button class="category" data-count="0">MANGA</button>
+        <button class="category" data-count="0">GUIES</button>
+        <button class="category" data-count="0">ART</button>
+        <button class="category" data-count="0">TEATRE</button>
+        <button class="category" data-count="0">LLIBRES CD VINILOS</button>
+        <button class="category" data-count="0">MÚSICA</button>
+        <button class="category" data-count="0">PSICOLOGIA</button>
+        <button class="category" data-count="0">NATURA</button>
+       
     </div>
-  </section>
-
-
-</main>
+  </main>
 
 <footer>
   <div>
     <h2 class="siguenos">SIGUENOS</h2>
     <div class="sociales">
       <div class="Whatsapp" ><p>Whatsapp</p>
-     <img src="./images/whatsapp-icon-design_23-2147900929.jpg" alt="">
-     <p>635 478 586</p>
+     <img src="/images/whatsapp-icon-design_23-2147900929.jpg" alt="">
+     <p>+34 693 101 633</p>
    </div>
 
    <div class="insta"><p>Instagram</p>
-      <a href="#"><img src="./images/instagram.png" alt=""></a>
-      <p>CLICK AL ICON</p>
+      <a href="#"><img src="/images/instagram.png" alt=""></a>
+     
       </div>
     </div>
   </div>
   
   <div class="insignia">
     <div>
-    <img src="./images/Inobili_2023.png" alt="" ></a>
+    <img src="/images/Inobili_2023.png" alt="" ></a>
       
-    <img src="./images/Inobili_2025.png" alt="" ></a>
+    <img src="/images/Inobili_2025.png" alt="" ></a>
   </div>
 
  
@@ -194,7 +183,7 @@
     <ul>
       <li><a href="#">ON SOM</a></li>
       <li><a href="#">CONTACT'ENS</a></li>
-      <li><a href="#">POLÍTICA DE PRIVACITAT</a></li>
+      <li><a href="privacidad.html">POLÍTICA DE PRIVACITAT</a></li>
     </ul>
   </div>
   <div class="copyright">

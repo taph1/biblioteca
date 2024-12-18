@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LLIBRES</title>
-    <link rel="stylesheet" href="../css/stylesheet.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="imag/x-icon" >
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="imag/x-icon" >
 </head>
 <body>
     
 
 <header>
-  <img src="./images/Logo - copia.png" alt="logo" style="width: 150px;">
+  <img src="/images/Logo - copia.png" alt="logo" style="width: 150px;">
   <h1>LA PILA DE LLIBRES</h1>
 
-    <ul>
+  <nav>
+    <ul  class="menu">
     <li><a href="index.html">INICI</a></li>
     <li class="dropdown">
       <a href="libros.html">LLIBRES</a>
@@ -114,6 +115,7 @@
     <li><a href="contacte.html">CONTACTE</a></li>
 
    </ul>
+  </nav>
 </header>
 <main>
   
@@ -128,7 +130,7 @@
 
 
         <!-- Corrected and improved image tag -->
-        <img src="./images/Principal.PNG" alt="Vista principal de la librería" style="width: 50%;">
+        <img src="/images/Principal.PNG" alt="Vista principal de la librería" style="width: 50%;">
     
         <!-- Added improved and semantically structured text -->
         <p>
@@ -148,12 +150,13 @@
         </p>
       </section>
 
-      <div class="search-container">
-        <input type="text" placeholder="Cerca per autor, títol, gènere, ISBN">
-        <button type="button">
+      <form class="search-container">
+        <input type="text" name="search" placeholder="Cerca per autor, títol, gènere, ISBN">
+        <button type="submit">
             <img src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt="Buscar">
         </button>
-    </div>
+    </form>
+    
 
     <div class="section-title">
       <span>Adreça / Horari d'atenció</span>
@@ -181,15 +184,15 @@
          <p> <strong>Consultar horari en Google map</strong></p>
           <h3><strong>Contacte</strong></h3>
           <p>
-            <img src="./images/WhatsApp.jpg" alt="Acceso a WhatsApp" style="width: 8%; vertical-align: middle; margin-right: 10px;">
-            WhatsApp: +34 935283426
+            <img src="/images/WhatsApp.jpg" alt="Acceso a WhatsApp" style="width: 8%; vertical-align: middle; margin-right: 10px;">
+            WhatsApp: +34 693 101 633
           </p>
           <p>
-            <img src="./images/PhoneIcon.jpg" alt="Teléfono" style="width: 8%; vertical-align: middle; margin-right: 10px;">
-            Teléfono: +34 693 101 633
+            <img src="/images/PhoneIcon.jpg" alt="Teléfono" style="width: 8%; vertical-align: middle; margin-right: 10px;">
+            Teléfono: +34 935 283 426
           </p>
           <p>
-            <img src="./images/EmailIcon.jpg" alt="Email" style="width: 8%; vertical-align: middle; margin-right: 10px;">
+            <img src="/images/EmailIcon.jpg" alt="Email" style="width: 8%; vertical-align: middle; margin-right: 10px;">
             Email: <a href="mailto:info@nomdellibreria.cat"> lapiladellibres@gmail.com</a>
           </p>
         </div>
@@ -207,7 +210,7 @@
         <div class="libros-grid">
           <!-- Libro 1 -->
           <div class="libro">
-            <img src="./images/libro_01.jpg" alt="L'ombra del vent">
+            <img src="/images/libro_01.jpg" alt="L'ombra del vent">
             <span class="etiqueta">Nou</span>
             <p class="formato">Tapa dura</p>
             <h3>L'ombra del vent</h3>
@@ -222,7 +225,7 @@
       
           <!-- Libro 2 -->
           <div class="libro">
-            <img src="./images/libro_02.jpg" alt="Terra Baixa">
+            <img src="/images/libro_02.jpg" alt="Terra Baixa">
             <span class="etiqueta">Nou</span>
             <p class="formato">Tapa blanda</p>
             <h3>Terra Baixa</h3>
@@ -237,7 +240,7 @@
       
           <!-- Libro 3 -->
           <div class="libro">
-            <img src="./images/libro_03.jpg" alt="Incerta glòria">
+            <img src="/images/libro_03.jpg" alt="Incerta glòria">
             <span class="etiqueta">Nou</span>
             <p class="formato">Tapa dura</p>
             <h3>Incerta glòria</h3>
@@ -252,7 +255,7 @@
       
           <!-- Libro 4 -->
           <div class="libro">
-            <img src="./images/libro_04.jpg" alt="La plaça del diamant">
+            <img src="/images/libro_04.jpg" alt="La plaça del diamant">
            
             <p class="formato">Tapa blanda</p>
             <h3>La plaça del diamant</h3>
@@ -267,7 +270,7 @@
       
           <!-- Libro 5 -->
           <div class="libro">
-            <img src="./images/libro_01.jpg" alt="Solitud">
+            <img src="/images/libro_01.jpg" alt="Solitud">
             
             <p class="formato">Tapa dura</p>
             <h3>Solitud</h3>
@@ -282,7 +285,7 @@
       
           <!-- Libro 6 -->
           <div class="libro">
-            <img src="./images/libro_01.jpg" alt="Camí de sirga">
+            <img src="/images/libro_01.jpg" alt="Camí de sirga">
             
             <p class="formato">Tapa blanda</p>
             <h3>Camí de sirga</h3>
@@ -297,7 +300,7 @@
       
           <!-- Libro 7 -->
           <div class="libro">
-            <img src="./images/libro_01.jpg" alt="Les veus del Pamano">
+            <img src="/images/libro_01.jpg" alt="Les veus del Pamano">
             
             <p class="formato">Tapa dura</p>
             <h3>Les veus del Pamano</h3>
@@ -312,7 +315,7 @@
       
           <!-- Libro 8 -->
           <div class="libro">
-            <img src="./images/libro_01.jpg" alt="El mar">
+            <img src="/images/libro_01.jpg" alt="El mar">
             
             <p class="formato">Tapa blanda</p>
             <h3>El mar</h3>
@@ -327,7 +330,7 @@
       
           <!-- Libro 9 -->
           <div class="libro">
-            <img src="./images/libro_01.jpg" alt="El quadern gris">
+            <img src="/images/libro_01.jpg" alt="El quadern gris">
             
             <p class="formato">Tapa dura</p>
             <h3>El quadern gris</h3>
@@ -342,7 +345,7 @@
       
           <!-- Libro 10 -->
           <div class="libro">
-            <img src="./images/libro_01.jpg" alt="La pell freda">
+            <img src="/images/libro_01.jpg" alt="La pell freda">
             
             <p class="formato">Tapa blanda</p>
             <h3>La pell freda</h3>
@@ -370,22 +373,22 @@
     <h2 class="siguenos">SIGUENOS</h2>
     <div class="sociales">
       <div class="Whatsapp" ><p>Whatsapp</p>
-     <img src="./images/whatsapp-icon-design_23-2147900929.jpg" alt="">
-     <p>635 478 586</p>
+     <img src="/images/whatsapp-icon-design_23-2147900929.jpg" alt="">
+     <p>+34 693 101 633</p>
    </div>
 
    <div class="insta"><p>Instagram</p>
-      <a href="#"><img src="./images/instagram.png" alt=""></a>
-      <p>CLICK AL ICON</p>
+      <a href="#"><img src="/images/instagram.png" alt=""></a>
+     
       </div>
     </div>
   </div>
   
   <div class="insignia">
     <div>
-    <img src="./images/Inobili_2023.png" alt="" ></a>
+    <img src="/images/Inobili_2023.png" alt="" ></a>
       
-    <img src="./images/Inobili_2025.png" alt="" ></a>
+    <img src="/images/Inobili_2025.png" alt="" ></a>
   </div>
 
  
@@ -396,7 +399,7 @@
     <ul>
       <li><a href="#">ON SOM</a></li>
       <li><a href="#">CONTACT'ENS</a></li>
-      <li><a href="#">POLÍTICA DE PRIVACITAT</a></li>
+      <li><a href="privacidad.html">POLÍTICA DE PRIVACITAT</a></li>
     </ul>
   </div>
 
